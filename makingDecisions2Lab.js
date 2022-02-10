@@ -70,32 +70,32 @@ var score = 74
     anything below 60 should console log an 'F'.
 */
 
-if (score >= 90){
-  console.log("A")
-} else if (score >= 80 && score <= 89){
-  console.log("B")
-} else if (score >= 70 && score <= 79){
-  console.log("C")
-} else if (score >= 60 && score <= 69) {
-  console.log("D")
-}else {
-  console.log("F")
-}
+// if (score >= 90){
+//   console.log("A")
+// } else if (score >= 80 && score < 90){
+//   console.log("B")
+// } else if (score >= 70 && score < 80){
+//   console.log("C")
+// } else if (score >= 60 && score < 70) {
+//   console.log("D")
+// }else {
+//   console.log("F")
+// }
 
 ////////// Intermediate Problems //////////
 
 ////////// PROBLEM 6 //////////
 
 // Do not edit the code below.
-var myFavoriteNumbers = [4,8,12,16,20,24];
+var myFavoriteNumbers = [4,8,12,16,20,24,];
 // Do not edit the code above.
 
 /*
   Create a variable named 'someNum' and set it equal to the fifth value of the 'myFavoriteNumbers' array.
 */
-
 //Code Here
-
+let someNum = myFavoriteNumbers[4];
+console.log(someNum);
 
 ////////// PROBLEM 7 //////////
 
@@ -103,8 +103,12 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 // Use an if statement to check the length of the 'myFavoriteNumbers' array. If it's less than 7, log 'There are not enough elements in this array' to the console. If the length is more than 7, reassign the value of 'someNum' to the value of the 7th element in the array. (Hint: how can you make sure that your code works for exactly 7 elements? What index do you use to get the 7th element?)
 
 //Code Here
-
-
+if(myFavoriteNumbers.length < 7) {
+  console.log("There are not enough elements in this array")
+} else {
+  someNum = myFavoriteNumbers[myFavoriteNumbers.length - 1]
+}
+console.log(someNum)
 ////////// PROBLEM 8 //////////
 
 // Do not edit the code below.

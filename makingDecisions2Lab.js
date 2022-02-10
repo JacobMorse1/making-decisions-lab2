@@ -205,3 +205,14 @@ switch (letterGrade) {
 */
 
 //Code Here
+for(let i = 1; i < 101; i++) {
+  if(i % 3 === 0 && i % 5 === 0) {
+    console.log("DevMountain")
+  } else if (i % 5 === 0) {
+    console.log("Mountain")
+  } else if (i % 3 === 0) {
+    console.log("Dev")
+  } else {
+    console.log(i)
+  }
+}
